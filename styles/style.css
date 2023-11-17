@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #FFC017;
+}
+
+.logo {
+    padding: 10px 3%;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+h2.title {
+    padding: 10px 5%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #242424;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px;
+    font-family: 'Robot', sans-serif;
+}
+
+nav ul li a.start {
+    border: 5px solid black;
+    border-radius: 50px;
+    width: max-content;
+    background-color: blanchedalmond;
+}
+
+nav ul li a:hover {
+    background-image: linear-gradient(to bottom right, lightcoral, #FFC017);
+    border-radius: 50px;
+}
+
+h2.title {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 100px;
+}
+
+h3.intro {
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    margin-top: -60px;
+    padding: 10px 8%;
+}
+
+hr.hr1, hr.hr2 {
+    border: 1px solid black;
+}
+
+p.p1 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: max-content;
+    background-color: #242424;
+    color: bisque;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    padding: 20px 2%;
+    margin-top: 45px;
+}
+
+p.p1:hover {
+    background-color: black;
+    cursor: pointer;
+}
