@@ -7,18 +7,20 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ebdcd5;
+    /* background-color: #ebdcd5; */
 }
 
 header {
-    background-color: #6a8161;
+    /* background-color: #6a8161; */
+    background-color: #f1e8ca;
     position: fixed;
     width: 100%;
     height: 77px;
 }
 
 .mini-header {
-    background-color: #6a8161;
+    /* background-color: #6a8161; */
+    background-color: #f1e8ca;
     overflow: hidden;
 }
 
@@ -57,17 +59,19 @@ nav ul li a.start {
     border: 3px solid black;
     border-radius: 50px;
     width: max-content;
-    background-color: #fff0cc;
+    /* background-color: #fff0cc; */
+    background-color: #9ebd9e;
 }
 
 nav ul li a:hover {
-    background-image: linear-gradient(to bottom right, #fff0cc, #6a8161);
+    background-image: linear-gradient(to bottom right, #bbcbdb, #f1e8ca);
     border-radius: 50px;
 }
 
 .search-bar {
     border-style: dashed;
-    background-color: #fff0cc;
+    /* background-color: #fff0cc; */
+    background-color: transparent;
     margin-left: 400px;
     padding: 10px;
     border-radius: 50px;
@@ -99,6 +103,7 @@ h3.intro {
 hr.hr1 {
     margin-top: -8px;
 }
+
 hr.hr1, hr.hr2 {
     border: 1px solid black;
 }
@@ -120,7 +125,7 @@ p.p1 {
 
 p.p1 a {
     text-decoration: none;
-    color: bisque;
+    color: #bbcbdb;
 }
 
 p.p1:hover {
@@ -148,6 +153,7 @@ section.container div.recent {
 section div.card {
     margin: 10px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
 }
 
 section div.content {
@@ -158,10 +164,11 @@ section div.content {
 section h2 {
     font-family: 'Dosis', sans-serif;
 }
+
 section p {
     font-family: "poppins", sans-serif;
     font-size: 16px;
-    margin: 15px 0px;
+    margin: 15px;
 }
 
 section a {
@@ -190,6 +197,7 @@ section div.img-one {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-radius: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -225,12 +233,15 @@ section div.img-one {
     }
 
     p.p1 {
-        margin-left: 10px 3%;
+        margin: 10px 3%;
+    }
+
+    .container div.recent h3 {
+        font-size: 35px;
+        margin-bottom: -30px;
     }
 }
 
-
-/* Media query for even smaller screens, adjust as needed */
 @media screen and (max-width: 480px) {
     .search-bar {
         display: none;
@@ -255,16 +266,21 @@ section div.img-one {
     }
 
     p.p1 {
-        margin-left: 10px 3%;
+        margin: 10px 3%;
+    }
+
+    .container div.recent h3 {
+        font-size: 25px;
+        margin-bottom: -30px;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    header {
+    /* header {
         height: auto;
         position: relative;
         
-    }
+    } */
 
     .search-bar {
         display: none;
@@ -274,16 +290,9 @@ section div.img-one {
         display: none;
     }
 
-    h2.title {
-        padding: 60px 5%;
-    }
-
-    h3.intro {
-        margin-top: -50px;
-    }
-
-    p.p1 {
-        margin-left: 10px 3%;
+    .container div.recent h3 {
+        font-size: 45px;
+        margin-bottom: -30px;
     }
 }
 
@@ -310,7 +319,4 @@ section div.img-one {
         margin-top: -50px;
     }
 
-    p.p1 {
-        margin-left: 10px 3%;
-    }
 }
