@@ -1,0 +1,120 @@
+.banner {
+    width: 100%;
+    height: 400px;
+    background-color: #bbcbdb;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-upload-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #9ebd9e;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.blog {
+    width: 560px;
+    min-width: 400px;
+    height: 100px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    cursor: pointer;
+}
+
+.title,
+.article {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    font-size: 50px;
+    font-weight: 600;
+    color: #2d2d2d;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    position: relative;
+}
+
+.title::placeholder,
+.article::placeholder {
+    color: #2d2d2d;
+}
+
+.article {
+    height: 500px;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-bottom: 100px;
+    white-space: pre-wrap;
+}
+
+.options {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.publish-btn,
+.upload-btn {
+    width: 150px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.publish-btn {
+    background-color: #2d2d2d;
+}
+
+.upload-btn {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.publish-btn:hover,
+.upload-btn:hover {
+    cursor: pointer;
+    background-color: #2d2d2d;
+}
+
+.options .upload-btn p {
+    margin-left: 30px;
+}
