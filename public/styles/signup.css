@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-image: linear-gradient(to bottom right, #f1e8ca,#E1AC00);
+    background-image: linear-gradient(to bottom right, #f1e8ca, #e8daad);
     border-radius: 50px;
 }
 
@@ -46,6 +46,7 @@ body {
     align-items: center;
     min-height: 100vh;
     /* background-image: url(../images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg); */
+    background: #f1e8ca;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -110,7 +111,7 @@ body {
 }
 
 .container .btn:hover {
-    background-color: #715701;
+    background-color: #e8daad;
 }
 
 .container .user {
