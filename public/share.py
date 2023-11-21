@@ -1,11 +1,14 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, redirect, url_for
 
-share = Blueprint("share", __name__)
 
-@share.route("/post", strict_slashes=False)
+posts = Blueprint("posts", __name__)
+
+
+@posts.route("/post")
 def post():
-    return render_template("blog.html")
-
-@share.route("/create", strict_slashes=False)
-def create():
     return render_template("editor.html")
+
+
+@posts.route("/blog")
+def blog():
+    return render_template("blog.html")
