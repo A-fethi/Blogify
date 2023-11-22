@@ -7,10 +7,12 @@ import os
 db = SQLAlchemy()
 DB_NAME = "database.db"
 
+
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = '########'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(app.root_path, DB_NAME)
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' +
+    os.path.join(app.root_path, DB_NAME)
     db.init_app(app)
 
     from .home import views
@@ -32,6 +34,7 @@ def create_app():
         return User.query.get(int(id))
 
     return app
+
 
 def create_database(app):
     with app.app_context():
