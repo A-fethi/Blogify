@@ -125,7 +125,7 @@ body {
 .container .remember-forgot label input {
     cursor: pointer;
     margin-right: 5px;
-    accent-color: auto gray;
+    accent-color: gray;
 }
 
 .container .remember-forgot a {

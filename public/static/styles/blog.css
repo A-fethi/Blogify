@@ -1,0 +1,29 @@
+.blog, .article {
+    position: relative;
+}
+
+.article, .title {
+    padding: 0 10px;
+    white-space: normal;
+}
+
+.published {
+    margin: 20px 0 60px;
+    padding: 0 10px;
+    text-transform: capitalize;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.published span {
+    font-weight: 700;
+}
+
+.article * {
+    margin: 30px 0;
+    color: #2d2d2d;
+}
+
+.logo {
+    background-color: rgb(247, 241, 233);
+}

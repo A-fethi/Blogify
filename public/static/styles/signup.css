@@ -129,6 +129,7 @@ body {
 .container .not-user a:hover {
     text-decoration: underline;
 }
+
 /* for phone */
 @media (max-width: 480px) {
     body {

@@ -24,18 +24,22 @@
         </div>
     </header>
     <div class="container">
-        <form action="">
+        <form method="POST">
             <h1>Sign Up</h1>
             <div class="box">
-                <input type="email" placeholder="Email" required>
+                <input type="text" id="email" name="email" placeholder="Email" required>
                 <i class='bx bxl-gmail'></i>
             </div>
             <div class="box">
-                <input type="text" placeholder="Username" required>
+                <input type="text" id="username" name="username" placeholder="Username" required>
                 <i class='bx bxs-user'></i>
             </div>
             <div class="box">
-                <input type="password" placeholder="Password" required>
+                <input type="password" id="password1" name="password1" placeholder="Enter Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="box">
+                <input type="password" id="password2" name="password2" placeholder="Repeat Password" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
             <button type="submit" class="btn">Sing Up</button>
