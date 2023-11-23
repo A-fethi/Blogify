@@ -12,6 +12,7 @@ DB_NAME = "database.db"
 secret_key = secrets.token_hex(16)
 secret_key_hashed = hashlib.sha256(secret_key.encode()).hexdigest()
 
+
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = secret_key_hashed
@@ -39,6 +40,7 @@ def create_app():
         return User.query.get(user_id)
     
     return app
+
 
 def create_database(app):
     with app.app_context():

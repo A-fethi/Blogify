@@ -10,6 +10,7 @@ def login():
     password = request.form.get("password")
     return render_template("login.html")
 
+
 @auth.route("/signup", methods=["GET", "POST"])
 def sign_up():
     email = request.form.get("email")
@@ -17,3 +18,5 @@ def sign_up():
     password1 = request.form.get("password1")
     password2 = request.form.get("password2")
     return render_template("signup.html")
+
+
