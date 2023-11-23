@@ -55,7 +55,8 @@ nav ul li a {
     font-family: 'Robot', sans-serif;
 }
 
-nav ul li a.start {
+nav ul li a.start,
+nav ul li a.logout {
     border: 3px solid black;
     border-radius: 50px;
     width: max-content;
@@ -198,6 +199,58 @@ section div.img-one {
     background-size: cover;
     background-position: center;
     border-radius: 50px;
+}
+
+.Success_flash,
+.Error_flash {
+    color: #FFF; /* White text color */
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -485%);
+    z-index: 1000;
+}
+
+.Success_flash {
+    background-color: #81C784; /* Green background for success */
+}
+
+/* Add these styles for Error_flash */
+.Error_flash {
+    background-color: #FF8A80; /* Red background for error */
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff; /* Adjust the color as needed */
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Style the 'X' inside the button */
+.btn-close::before,
+.btn-close::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    background-color: #000; /* Adjust the color as needed */
+}
+
+.btn-close::before {
+    transform: rotate(45deg);
+}
+
+.btn-close::after {
+    transform: rotate(-45deg);
 }
 
 @media screen and (max-width: 768px) {

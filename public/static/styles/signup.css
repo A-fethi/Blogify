@@ -130,6 +130,28 @@ body {
     text-decoration: underline;
 }
 
+.Success_flash,
+.Error_flash {
+    color: #FFF; /* White text color */
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -550%);
+    z-index: 1000;
+}
+
+.Success_flash {
+    background-color: #81C784; /* Green background for success */
+}
+
+/* Add these styles for Error_flash */
+.Error_flash {
+    background-color: #FF8A80; /* Red background for error */
+}
+
 /* for phone */
 @media (max-width: 480px) {
     body {

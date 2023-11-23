@@ -68,6 +68,10 @@ textarea::-webkit-scrollbar-thumb:hover {
     color: #2d2d2d;
 }
 
+.logo {
+    background-color: rgb(247, 241, 233);;
+}
+
 .article {
     height: 500px;
     font-size: 20px;

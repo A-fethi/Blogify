@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <script src="../static/scripts/script.js"></script>
     <title>Your Platform for Expressive Writing</title>
 </head>
 
@@ -32,12 +33,33 @@
                         <button type="submit" class="button-search">Search</button>
                     </form>
                     <ul>
-                        <li><a href="/" class="home">Home</a></li>
-                        <li><a href="/post" class="about">Write</a></li>
-                        <li><a href="/login" class="login">Login</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/post">Write</a></li>
+                        {% if user.is_authenticated %}
+                        <li><a href="/logout" class="logout">Logout</a></li>
+                        {% else %}
+                        <li><a href="/login">Login</a></li>
                         <li><a href="/signup" class="start">Get Started</a></li>
+                        {% endif %}
                     </ul>
                 </nav>
+                {% with messages = get_flashed_messages(with_categories=True) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                        {% if category == "error" %}
+                        <div class="Error_flash hidden" role="alert">
+                            {{ message }}
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="alert"></button> -->
+                        </div>
+                        {% else %}
+                        <div class="Success_flash hidden" role="alert">
+                            {{ message }}
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="alert"></button> -->
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
             </div>
             <hr class="hr1">
         </div>
