@@ -223,36 +223,6 @@ section div.img-one {
     background-color: #FF8A80; /* Red background for error */
 }
 
-.btn-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    background-color: #fff; /* Adjust the color as needed */
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-/* Style the 'X' inside the button */
-.btn-close::before,
-.btn-close::after {
-    content: '';
-    position: absolute;
-    height: 20px;
-    width: 2px;
-    background-color: #000; /* Adjust the color as needed */
-}
-
-.btn-close::before {
-    transform: rotate(45deg);
-}
-
-.btn-close::after {
-    transform: rotate(-45deg);
-}
-
 @media screen and (max-width: 768px) {
     header {
         height: auto;
@@ -260,10 +230,10 @@ section div.img-one {
         
     }
 
-    nav ul a.home,
+    /* nav ul a.home,
     nav ul a.about {
         display: none;
-    }
+    } */
 
     nav ul li {
         margin: 0px;
@@ -295,7 +265,8 @@ section div.img-one {
     }
 }
 
-@media screen and (max-width: 480px) {
+/* for phone */
+@media (max-width: 480px) {
     .search-bar {
         display: none;
     }
@@ -304,14 +275,14 @@ section div.img-one {
         display: none;
     }
 
-    nav ul a.home,
+    nav ul a.write,
     nav ul a.about,
-    nav ul a.login {
+    nav ul a.start {
         display: none;
     }
 
     h2.title {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     h3.intro {
@@ -319,16 +290,23 @@ section div.img-one {
     }
 
     p.p1 {
-        margin: 10px 3%;
+        margin: 10px 7%;
     }
 
     .container div.recent h3 {
         font-size: 25px;
         margin-bottom: -30px;
     }
+
+    .Success_flash,
+    .Error_flash {
+        transform: translate(-50%, -680%);
+        font-size: 15px;
+    }
 }
 
-@media screen and (max-width: 1024px) {
+/* for tablette */
+@media (min-width: 481px) and (max-width: 1024px) {
     /* header {
         height: auto;
         position: relative;
@@ -349,7 +327,8 @@ section div.img-one {
     }
 }
 
-@media screen and (max-width: 1280px) {
+/* for desktop */
+/* @media (min-width: 1025px) {
     header {
         height: auto;
         position: relative;
@@ -372,4 +351,4 @@ section div.img-one {
         margin-top: -50px;
     }
 
-}
+} */

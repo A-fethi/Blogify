@@ -16,8 +16,7 @@ secret_key_hashed = hashlib.sha256(secret_key.encode()).hexdigest()
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = secret_key_hashed
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' +
-    os.path.join(app.root_path, DB_NAME)
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(app.root_path, DB_NAME)
     db.init_app(app)
 
     from .home import views

@@ -33,12 +33,12 @@
                         <button type="submit" class="button-search">Search</button>
                     </form>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/post">Write</a></li>
+                        <li><a href="/" class="home">Home</a></li>
+                        <li><a href="/post" class="about">Write</a></li>
                         {% if user.is_authenticated %}
                         <li><a href="/logout" class="logout">Logout</a></li>
                         {% else %}
-                        <li><a href="/login">Login</a></li>
+                        <li><a href="/login" class="login">Login</a></li>
                         <li><a href="/signup" class="start">Get Started</a></li>
                         {% endif %}
                     </ul>

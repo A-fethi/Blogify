@@ -154,26 +154,59 @@ body {
 
 /* for phone */
 @media (max-width: 480px) {
-    body {
-        background-image: url(../images/for\ phone.jpg);
-    }
-
     .container {
-        padding: 20px 10px;
+        padding: 10px 10px;
+        width: 260px;
+        margin-top: 30px;
     }
 
-    .container .box {
-        position: relative;
-        margin: 10px 0px 20px 0px;
-        width: 100%;
-        cursor: text;
+    .container h1 {
+        margin: 5px 0px -15px 0px;
+        font-size: 25px;
+    }
+
+    nav {
+        margin-top: 90px;
+    }
+
+    .container .user p {
+        margin-top: -5px;
+        font-size: 12px;
+    }
+
+    .container .box input,
+    .container .btn {
+        font-size: 13px;
+        height: 40px;
     }
 }
 
 /* for tablette */
 @media (min-width: 481px) and (max-width: 1024px) {
-    body {
-        background-image: url(images/background-tablet.jpg);
+    .container {
+        padding: 10px 10px;
+        width: 300px;
+        margin-top: 30px;
+    }
+
+    .container h1 {
+        margin: 5px 0px -15px 0px;
+        font-size: 25px;
+    }
+
+    nav {
+        margin-top: 90px;
+    }
+
+    .container .user p {
+        margin-top: -5px;
+        font-size: 12px;
+    }
+
+    .container .box input,
+    .container .btn {
+        font-size: 13px;
+        height: 40px;
     }
 }
 
