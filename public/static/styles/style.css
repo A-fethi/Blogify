@@ -30,10 +30,7 @@ header {
 
 h2.title {
     padding: 160px 5%;
-}
-
-h2 {
-    margin: -10px;
+    margin-top: -50px;
 }
 
 nav {
@@ -243,10 +240,11 @@ section div.img-one {
 
     h2.title {
         font-size: 20px;
+	margin-top: -45px;
     }
 
     h3.intro {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     p.p1 {
@@ -263,28 +261,55 @@ section div.img-one {
         transform: translate(-50%, -680%);
         font-size: 15px;
     }
+
+    .options {
+	margin-left: 8px;
+    }
 }
 
 /* for tablette */
 @media (min-width: 481px) and (max-width: 1024px) {
-    /* header {
-        height: auto;
-        position: relative;
-        
-    } */
+    nav ul li {
+        margin: 0px;
+    }
 
-    .search-bar {
-        display: none;
+    nav ul li a {
+        font-size: 17px;
     }
 
     button.button-search {
         display: none;
     }
 
+    h2.title {
+        font-size: 30px;
+	margin-top: -45px;
+    }
+
+    h3.intro {
+        font-size: 20px;
+    }
+
+    p.p1 {
+        margin: 10px 7%;
+    }
+
     .container div.recent h3 {
         font-size: 45px;
         margin-bottom: -30px;
     }
+
+    .Success_flash,
+    .Error_flash {
+        transform: translate(-50%, -680%);
+        font-size: 15px;
+    }
+    
+    .search-bar,
+    button.button-search {
+        display: none;
+    }
+
 }
 
 /* for desktop */

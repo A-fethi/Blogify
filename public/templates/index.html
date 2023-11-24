@@ -71,7 +71,9 @@
             it's celebrated.<br>Join us on a journey of discovery across a myriad of topics,<br>where every article is
             an
             invitation to expand your mind and ignite your imagination.</h3>
-        <p class="p1"><a href="/signup">Start Reading</a></p>
+	{% if not user.is_authenticated %}
+		<p class="p1"><a href="/signup">Start Reading</a></p>
+	{% endif %}
         <hr class="hr2">
     </div>
     <section class="container">
