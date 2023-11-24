@@ -146,6 +146,7 @@ body {
 .container .not-user p {
     text-align: center;
 }
+
 .container .not-user a {
     text-decoration: none;
     color: black;
@@ -188,10 +189,6 @@ body {
         margin-top: 10px;
         font-size: 25px;
     }
-
-    nav {
-        margin-top: 90px;
-    }
     
     .container .remember-forgot {
         display: inline-flex;
@@ -207,6 +204,7 @@ body {
 
     .container .not-user p {
         margin-top: -5px;
+        font-size: 13px;
     }
 
     .container .box input,
@@ -226,10 +224,6 @@ body {
     .container h1 {
         margin-top: 10px;
         font-size: 25px;
-    }
-
-    nav {
-        margin-top: 90px;
     }
     
     .container .remember-forgot {

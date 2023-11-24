@@ -122,3 +122,27 @@ textarea::-webkit-scrollbar-thumb:hover {
 .options .upload-btn p {
     margin-left: 30px;
 }
+
+/* for phone */
+@media (max-width: 480px) {
+    /* .title {
+        font-size: 30px;
+    }
+
+    .article {
+        font-size: 15px;
+    }
+
+    .options {
+        width: 50%;
+        font-size: 10px;
+    } */
+}
+
+/* for tablette */
+@media (min-width: 481px) and (max-width: 1024px) {
+    
+}
+
+/* for desktop */
+@media (min-width: 1025px) {}

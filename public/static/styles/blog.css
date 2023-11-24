@@ -27,3 +27,28 @@
 .logo {
     background-color: rgb(247, 241, 233);
 }
+
+/* for phone */
+@media (max-width: 480px) {
+    .blog {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .published, .article {
+        font-size: 15px;
+        margin-left: 10%;
+    }
+}
+
+/* for tablette */
+@media (min-width: 481px) and (max-width: 1024px) {
+    
+}
+
+/* for desktop */
+@media (min-width: 1025px) {}

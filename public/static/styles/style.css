@@ -275,12 +275,6 @@ section div.img-one {
         display: none;
     }
 
-    nav ul a.write,
-    nav ul a.about,
-    nav ul a.start {
-        display: none;
-    }
-
     h2.title {
         font-size: 20px;
     }

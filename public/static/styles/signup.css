@@ -164,11 +164,7 @@ body {
         margin: 5px 0px -15px 0px;
         font-size: 25px;
     }
-
-    nav {
-        margin-top: 90px;
-    }
-
+    
     .container .user p {
         margin-top: -5px;
         font-size: 12px;
@@ -192,10 +188,6 @@ body {
     .container h1 {
         margin: 5px 0px -15px 0px;
         font-size: 25px;
-    }
-
-    nav {
-        margin-top: 90px;
     }
 
     .container .user p {
