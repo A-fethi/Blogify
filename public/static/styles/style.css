@@ -223,52 +223,14 @@ section div.img-one {
     background-color: #FF8A80; /* Red background for error */
 }
 
-@media screen and (max-width: 768px) {
-    header {
-        height: auto;
-        position: relative;
-        
-    }
-
-    /* nav ul a.home,
-    nav ul a.about {
-        display: none;
-    } */
-
-    nav ul li {
-        margin: 0px;
-    }
-
-    .search-bar {
-        display: none;
-    }
-
-    button.button-search {
-        display: none;
-    }
-
-    h2.title {
-        padding: 60px 5%;
-    }
-
-    h3.intro {
-        margin-top: -50px;
-    }
-
-    p.p1 {
-        margin: 10px 3%;
-    }
-
-    .container div.recent h3 {
-        font-size: 35px;
-        margin-bottom: -30px;
-    }
-}
-
 /* for phone */
 @media (max-width: 480px) {
     .search-bar {
         display: none;
+    }
+
+    .start {
+	display: none;
     }
 
     button.button-search {
