@@ -229,8 +229,12 @@ section div.img-one {
         display: none;
     }
 
-    .start {
-	display: none;
+    nav ul li {
+        margin: 0px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
     }
 
     button.button-search {
