@@ -72,26 +72,6 @@ nav ul li a:hover {
     border-radius: 50px;
 }
 
-.search-bar {
-    border-style: dashed;
-    /* background-color: #fff0cc; */
-    background-color: transparent;
-    margin-left: 280px;
-    padding: 10px;
-    border-radius: 50px;
-    outline: none;
-}
-
-button.button-search {
-    text-indent: -999px;
-    overflow: hidden;
-    width: 40px;
-    border: 1px solid transparent;
-    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
-    cursor: pointer;
-    opacity: 0.7;
-}
-
 h2.title {
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: 60px;
@@ -232,7 +212,7 @@ section div.img-one {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -485%);
+    transform: translate(-50%, -635%);
     z-index: 1000;
 }
 
@@ -246,20 +226,12 @@ section div.img-one {
 
 /* for phone */
 @media (max-width: 480px) {
-    .search-bar {
-        display: none;
-    }
-
     nav ul li {
         margin: 0px;
     }
 
     nav ul li a {
         font-size: 10px;
-    }
-
-    button.button-search {
-        display: none;
     }
 
     h2.title {
@@ -301,10 +273,6 @@ section div.img-one {
         font-size: 17px;
     }
 
-    button.button-search {
-        display: none;
-    }
-
     h2.title {
         font-size: 30px;
 	margin-top: -45px;
@@ -328,11 +296,6 @@ section div.img-one {
         transform: translate(-50%, -680%);
         font-size: 15px;
     }
-    
-    .search-bar,
-    button.button-search {
-        display: none;
-    }
 
 }
 
@@ -342,14 +305,6 @@ section div.img-one {
         height: auto;
         position: relative;
         
-    }
-
-    .search-bar {
-        display: none;
-    }
-
-    button.button-search {
-        display: none;
     }
 
     h2.title {

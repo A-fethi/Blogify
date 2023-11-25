@@ -3,7 +3,6 @@ from flask_login import login_required, current_user
 from .models import Post, User
 from . import db
 
-
 posts = Blueprint("posts", __name__)
 
 
@@ -13,6 +12,7 @@ def post():
     if request.method == 'POST':
         title = request.form.get('title')
         article = request.form.get('article')
+
         if not article:
             flash('Post cannot be empty', category='error')
         elif not title:

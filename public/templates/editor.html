@@ -30,7 +30,7 @@
                         {% else %}
                         <div id="success-flash" class="Success_flash hidden" role="alert">
                             {{ message }}
-                            <button type="button" class="btn-close" onclick="closeFlash('error-flash')">&times;</button>
+                            <button type="button" class="btn-close" onclick="closeFlash('success-flash')">&times;</button>
                         </div>
                         {% endif %}
                         {% endfor %}
@@ -41,7 +41,7 @@
         <div class="banner">
             <input type="file" accept="image/*" id="banner-upload" name="banner" hidden>
             <label for="banner-upload" class="banner-upload-btn"><img src="../static/images/upload banner.png"
-                    alt="upload banner" width="20px"></label>
+                    alt="upload banner" width="20px" onclick="ChangeImage('banner-upload')"></label>
         </div>
         <div class="test">
             <textarea type="text" name="title" class="title" placeholder="Blog Title ..."></textarea>

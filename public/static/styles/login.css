@@ -165,7 +165,7 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -445%);
+    transform: translate(-50%, -635%);
     z-index: 1000;
 }
 
