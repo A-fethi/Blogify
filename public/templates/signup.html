@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/styles/signup.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="../static/images/—Pngtree—letter b logo_6059128.png">
+    <script src="../static/scripts/script.js"></script>
     <title>Sign Up</title>
 </head>
 
@@ -24,14 +25,14 @@
                     {% if messages %}
                         {% for category, message in messages %}
                         {% if category == "error" %}
-                        <div class="Error_flash hidden" role="alert">
+                        <div id="error-flash" class="Error_flash hidden" role="alert">
                             {{ message }}
-                            <!-- <button type="button" class="btn-close" data-bs-dismiss="alert"></button> -->
+                            <button type="button" class="btn-close" onclick="closeFlash('error-flash')">&times;</button>
                         </div>
                         {% else %}
-                        <div class="Success_flash hidden" role="alert">
+                        <div id="success-flash" class="Success_flash hidden" role="alert">
                             {{ message }}
-                            <!-- <button type="button" class="btn-close" data-bs-dismiss="alert"></button> -->
+                            <button type="button" class="btn-close" onclick="closeFlash('error-flash')">&times;</button>
                         </div>
                         {% endif %}
                         {% endfor %}

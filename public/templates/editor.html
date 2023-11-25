@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <title>Write</title>
     <link rel="stylesheet" href="../static/styles/style.css">
     <link rel="stylesheet" href="../static/styles/editor.css">
+    <script src="../static/scripts/script.js"></script>
 </head>
+
 <body>
     <div class="logo">
         <nav>
@@ -16,20 +19,43 @@
                 <li><a href="/" class="home">Home</a></li>
             </ul>
         </nav>
+        {% with messages = get_flashed_messages(with_categories=True) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                        {% if category == "error" %}
+                        <div id="error-flash" class="Error_flash hidden" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" onclick="closeFlash('error-flash')">&times;</button>
+                        </div>
+                        {% else %}
+                        <div id="success-flash" class="Success_flash hidden" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" onclick="closeFlash('error-flash')">&times;</button>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
     </div>
-    <div class="banner">
-        <input type="file" accept="image/*" id="banner-upload" hidden>
-        <label for="banner-upload" class="banner-upload-btn"><img src="../static/images/upload banner.png" alt="upload banner" width="20px"></label>
-    </div>
-    <div class="test">
-        <textarea type="text" class="title" placeholder="Blog Title ..."></textarea>
-        <textarea type="text" class="article" placeholder="Start Writing ..."></textarea>
-        <br><br><br><br><br>
-        <div class="options">
-            <button class="publish-btn">Publish</button>
-                <input type="file" accept="image/*" id="image-upload" hidden>
-                <label for="image-upload" class="upload-btn"><p>Upload Image</p></label>
+    <form method="POST" enctype="multipart/form-data">
+        <div class="banner">
+            <input type="file" accept="image/*" id="banner-upload" name="banner" hidden>
+            <label for="banner-upload" class="banner-upload-btn"><img src="../static/images/upload banner.png"
+                    alt="upload banner" width="20px"></label>
         </div>
-    </div>
+        <div class="test">
+            <textarea type="text" name="title" class="title" placeholder="Blog Title ..."></textarea>
+            <textarea type="text" name="article" class="article" placeholder="Start Writing ..."></textarea>
+            <br><br><br><br><br>
+            <div class="options">
+                <button class="publish-btn">Publish</button>
+                <input type="file" accept="image/*" id="image-upload" hidden>
+                <label for="image-upload" class="upload-btn">
+                    <p>Upload Image</p>
+                </label>
+            </div>
+        </div>
+    </form>
 </body>
+
 </html>

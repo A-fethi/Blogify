@@ -132,7 +132,7 @@ body {
 
 .Success_flash,
 .Error_flash {
-    color: #FFF; /* White text color */
+    color: #FFF;
     text-align: center;
     padding: 15px;
     border-radius: 10px;
@@ -144,12 +144,22 @@ body {
 }
 
 .Success_flash {
-    background-color: #81C784; /* Green background for success */
+    background-color: #81C784;
 }
 
-/* Add these styles for Error_flash */
 .Error_flash {
-    background-color: #FF8A80; /* Red background for error */
+    background-color: #FF8A80;
+}
+
+.btn-close {
+    color: #FFF;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: -2px;
+    right: 5px;
 }
 
 /* for phone */

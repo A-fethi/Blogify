@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
-    <script src="../static/scripts/script.js"></script>
+    <script src="../static/scripts/script.js"></script> 
     <title>Your Platform for Expressive Writing</title>
 </head>
 
@@ -47,14 +47,14 @@
                     {% if messages %}
                         {% for category, message in messages %}
                         {% if category == "error" %}
-                        <div class="Error_flash hidden" role="alert">
+                        <div id="error-flash" class="Error_flash hidden" role="alert">
                             {{ message }}
-                            <!-- <button type="button" class="btn-close" data-bs-dismiss="alert"></button> -->
+                            <button type="button" class="btn-close" onclick="closeFlash('error-flash')">&times;</button>
                         </div>
                         {% else %}
-                        <div class="Success_flash hidden" role="alert">
+                        <div id="success-flash" class="Success_flash hidden" role="alert">
                             {{ message }}
-                            <!-- <button type="button" class="btn-close" data-bs-dismiss="alert"></button> -->
+                            <button type="button" class="btn-close" onclick="closeFlash('error-flash')">&times;</button>
                         </div>
                         {% endif %}
                         {% endfor %}
@@ -71,6 +71,7 @@
             it's celebrated.<br>Join us on a journey of discovery across a myriad of topics,<br>where every article is
             an
             invitation to expand your mind and ignite your imagination.</h3>
+            
 	{% if not user.is_authenticated %}
 		<p class="p1"><a href="/signup">Start Reading</a></p>
 	{% endif %}
@@ -81,14 +82,26 @@
             <h3>Recent Blogs</h3>
         </div>
         <div class="section">
+            {% for post in posts %}
             <div class="card">
                 <div class="image-section img-one"></div>
                 <div class="content">
-                    <h2>Blog One</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="" class="button"><strong>Read More</strong></a>
+                    <h3>
+                        From {{ post.user.username }} At {{ post.created_at }}
+                    </h3>
+                    <h2>
+                        {{ post.title }}
+                    </h2>
+                    <p>
+                        {{ post.article }}
+                    </p>
+                    <a href="/blog/{{post.id}}" class="button"><strong>Read More</strong></a>
+                    {% if user.id == post.author %}
+                    <a href="/delete/{{post.id}}" class="button"><strong>Delete</strong></a>
+                    {% endif %}
                 </div>
             </div>
+        {% endfor %}
         </div>
     </section>
 </body>
