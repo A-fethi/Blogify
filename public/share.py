@@ -13,15 +13,12 @@ def post():
     if request.method == 'POST':
         title = request.form.get('title')
         article = request.form.get('article')
-        picture = request.form.get('picture')
         if not article:
             flash('Post cannot be empty', category='error')
         elif not title:
             flash('Title cannot be empty', category='error')
-        if not picture:
-            flash('hhhhhh', category='error')
         else:
-            post = Post(title=title, article=article, picture=picture, author=current_user.id)
+            post = Post(title=title, article=article, author=current_user.id)
             db.session.add(post)
             db.session.commit()
             flash('Post Created!', category='success')

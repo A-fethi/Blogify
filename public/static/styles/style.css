@@ -11,20 +11,12 @@ body {
 }
 
 header {
-    background-color:#99fff1;
-    background-image:
-    radial-gradient(at 88% 65%, hsla(262,78%,77%,1) 0px, transparent 50%),
-    radial-gradient(at 69% 75%, hsla(167,81%,65%,1) 0px, transparent 50%),
-    radial-gradient(at 87% 65%, hsla(120,82%,74%,1) 0px, transparent 50%),
-    radial-gradient(at 89% 20%, hsla(160,84%,67%,1) 0px, transparent 50%),
-    radial-gradient(at 61% 74%, hsla(214,99%,62%,1) 0px, transparent 50%),
-    radial-gradient(at 84% 94%, hsla(1,96%,65%,1) 0px, transparent 50%),
-    radial-gradient(at 46% 29%, hsla(312,89%,79%,1) 0px, transparent 50%);
     position: fixed;
     width: 100%;
     height: 77px;
 }
 
+header,
 .mini-header {
     background-color:#99fff1;
     background-image:
@@ -290,8 +282,8 @@ section div.img-one {
 
     .Success_flash,
     .Error_flash {
-        transform: translate(-50%, -680%);
-        font-size: 15px;
+        transform: translate(-50%, -690%);
+        font-size: 10px;
     }
 
     .options {

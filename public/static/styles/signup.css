@@ -185,6 +185,11 @@ body {
         font-size: 13px;
         height: 40px;
     }
+
+    .Success_flash,
+    .Error_flash {
+        transform: translate(-50%, -360%);
+    }
 }
 
 /* for tablette */
