@@ -74,12 +74,12 @@ nav ul li a:hover {
 
 h2.title {
     font-family: 'Kdam Thmor Pro', sans-serif;
-    font-size: 60px;
+    font-size: 45px;
 }
 
 h3.intro {
     font-family: 'Dosis', sans-serif;
-    font-size: 30px;
+    font-size: 23px;
     margin-top: -150px;
     padding: 10px 8%;
 }
@@ -222,6 +222,18 @@ section div.img-one {
 
 .Error_flash {
     background-color: #FF8A80;
+}
+
+.sapiens {
+    margin-left: 990px;
+    margin-top: -253px;
+    margin-bottom: -75px;
+}
+
+.sapiens1 {
+    margin-left: 990px;
+    margin-top: -253px;
+    margin-bottom: 10px;
 }
 
 /* for phone */
