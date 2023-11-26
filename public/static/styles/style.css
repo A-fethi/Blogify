@@ -7,7 +7,9 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-color: #ebdcd5; */
+    background-color: #F1E8CA;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header {
@@ -64,7 +66,8 @@ nav ul li a.logout {
     border-radius: 50px;
     width: max-content;
     /* background-color: #fff0cc; */
-    background-color: #9ebd9e;
+    /* background-color: #9ebd9e; */
+    background-color: #52C4D5;
 }
 
 nav ul li a:hover {
@@ -135,9 +138,10 @@ section.container div.recent {
 }
 
 .section h3 {
-    font-family: 'poppins', sans-serif;
-    color: #6a8161;
-    margin: 3px;
+    font-family: 'Dosis', sans-serif;
+    color: #000000;
+    margin-bottom: 3px;
+    font-size: 15px;
 }
 
 section div.card {
@@ -180,14 +184,14 @@ section a {
     text-decoration: none;
     font-size: 16px;
     display: inline-block;
-    background-color: #fff0cc;
-    color: #000000;
+    background-color: black;
+    color: #bbcbdb;
     border-radius: 50px;
     margin-bottom: 20px;
 }
 
 section a:hover {
-    background-color: #6a8161;
+    background-color: #242424;
     transition: 1s ease;
 }
 
@@ -236,6 +240,22 @@ section div.img-one {
     margin-bottom: 10px;
 }
 
+.section a.posts {
+    background-color: transparent;
+    color: #242424;
+    margin: 0px;
+    margin-left: -5px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.section a.posts:hover {
+    color: #57a2a9;
+    font-size: 20px;
+    transition: .3s;
+}
+
 /* for phone */
 @media (max-width: 480px) {
     nav ul li {
@@ -277,27 +297,6 @@ section div.img-one {
 
 /* for tablette */
 @media (min-width: 481px) and (max-width: 1024px) {
-    nav ul li {
-        margin: 0px;
-    }
-
-    nav ul li a {
-        font-size: 17px;
-    }
-
-    h2.title {
-        font-size: 30px;
-	margin-top: -45px;
-    }
-
-    h3.intro {
-        font-size: 20px;
-    }
-
-    p.p1 {
-        margin: 10px 7%;
-    }
-
     .container div.recent h3 {
         font-size: 45px;
         margin-bottom: -30px;
@@ -308,23 +307,19 @@ section div.img-one {
         transform: translate(-50%, -680%);
         font-size: 15px;
     }
-
 }
 
 /* for desktop */
 /* @media (min-width: 1025px) {
-    header {
-        height: auto;
-        position: relative;
-        
+    .sapiens,
+    .sapiens1 {
+        margin-left: 1500px
     }
+}
 
-    h2.title {
-        padding: 60px 5%;
+@media (min-width: 1921px) {
+    .sapiens,
+    .sapiens1 {
+        margin-left: 2000px
     }
-
-    h3.intro {
-        margin-top: -50px;
-    }
-
 } */

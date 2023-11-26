@@ -12,12 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
     <script src="../static/scripts/script.js"></script> 
     <title>Your Platform for Expressive Writing</title>
 </head>
@@ -87,7 +81,7 @@
                 <div class="image-section img-one"></div>
                 <div class="content">
                     <h3>
-                        From {{ post.user.username }} At {{ post.created_at }}
+                        From <a href="/posts/{{post.user.username}}" class="posts">{{ post.user.username }}</a><br> At {{ post.created_at }}
                     </h3>
                     <h2>
                         {{ post.title }}

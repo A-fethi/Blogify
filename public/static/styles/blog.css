@@ -21,14 +21,9 @@
 }
 
 .article {
-    padding: 0px 80px 0px 80px;
-    /* white-space: pre-line; */
+    padding: 0px 150px 0px 150px;
+    white-space: pre-line;
 }
-
-/*.article * {
-    margin: 30px 0;
-    color: #2d2d2d;
-}*/
 
 .logo {
     background-color: rgb(247, 241, 233);
