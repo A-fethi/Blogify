@@ -148,6 +148,13 @@ section div.card {
     margin: 10px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
     border-radius: 50px;
+    /* background-color:hsla(46,58%,86%,1);
+    background-image:
+    radial-gradient(at 40% 20%, hsla(210,30%,79%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(120,19%,68%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(19,65%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(0,17%,38%,1) 0px, transparent 50%); */
+    background-color: aliceblue;
 }
 
 section div.content {
@@ -195,7 +202,7 @@ section a:hover {
     transition: 1s ease;
 }
 
-section div.image-section {
+/* section div.image-section {
     min-height: 250px;
 }
 
@@ -205,7 +212,7 @@ section div.img-one {
     background-size: cover;
     background-position: center;
     border-radius: 50px;
-}
+}*/
 
 .Success_flash,
 .Error_flash {
@@ -251,7 +258,7 @@ section div.img-one {
 }
 
 .section a.posts:hover {
-    color: #57a2a9;
+    color: white;
     font-size: 20px;
     transition: .3s;
 }

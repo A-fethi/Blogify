@@ -60,7 +60,7 @@ textarea::-webkit-scrollbar-thumb:hover {
 
 .title {
     padding: 0px 150px 0px 150px;
-    margin-top: 20px;
+    margin: 20px 0px -20px 0px;
     font-size: 40px;
     text-align: center;
 }
@@ -75,13 +75,14 @@ textarea::-webkit-scrollbar-thumb:hover {
 }
 
 .article {
-    height: 500px;
+    height: 359px;
     font-size: 15px;
     margin-top: 20px;
     line-height: 30px;
     font-weight: 400;
     padding: 0px 120px 0px 120px;
     background-color: darkseagreen;
+    white-space: pre-line;
 }
 
 .article::placeholder {

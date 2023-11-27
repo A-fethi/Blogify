@@ -1,14 +1,8 @@
-.title {
-    margin-top: 30px;
-}
-
-.article, .title {
-    padding: 0 10px;
-    white-space: normal;
+.article {
+    height: auto;
 }
 
 .published {
-    margin: 20px 0 60px;
     padding: 0 10px;
     text-transform: capitalize;
     font-style: italic;
@@ -20,13 +14,67 @@
     font-weight: 700;
 }
 
-.article {
-    padding: 0px 150px 0px 150px;
-    white-space: pre-line;
-}
-
 .logo {
     background-color: rgb(247, 241, 233);
+}
+
+.comments .comment-body {
+    border: solid;
+    width: 70%;
+    height: 40px;
+    background-color: transparent;
+    border-style: double;
+    padding: 10px;
+    margin-left: 170px;
+}
+
+.comments .comment-btn {
+    height: 38px;
+    width: 80px;
+    border-radius: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.Comments-container {
+    height: auto;
+    border: solid 1px;
+    width: 90%;
+    margin-left: 70px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.Comments-container div {
+    font-size: 12px;
+    font-family: 'Dosis', sans-serif;
+    white-space: pre-line;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.Comments-container div.Author,
+.Comments-container div.cmnt {
+    padding-right: 10px;
+}
+
+.Comments-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.Comments-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.Comments-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.Comments-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    cursor: pointer;
 }
 
 /* for phone */
