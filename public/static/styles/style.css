@@ -7,9 +7,15 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #F1E8CA;
+    /* background-color: #F1E8CA;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
+    font-family: 'Dosis', sans-serif;
+    background-color: #F0F8FF;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
 }
 
 header {
@@ -20,15 +26,15 @@ header {
 
 header,
 .mini-header {
-    background-color:#99fff1;
+    background-color: #99fff1;
     background-image:
-    radial-gradient(at 88% 65%, hsla(262,78%,77%,1) 0px, transparent 50%),
-    radial-gradient(at 69% 75%, hsla(167,81%,65%,1) 0px, transparent 50%),
-    radial-gradient(at 87% 65%, hsla(120,82%,74%,1) 0px, transparent 50%),
-    radial-gradient(at 89% 20%, hsla(160,84%,67%,1) 0px, transparent 50%),
-    radial-gradient(at 61% 74%, hsla(214,99%,62%,1) 0px, transparent 50%),
-    radial-gradient(at 84% 94%, hsla(1,96%,65%,1) 0px, transparent 50%),
-    radial-gradient(at 46% 29%, hsla(312,89%,79%,1) 0px, transparent 50%);
+        radial-gradient(at 88% 65%, hsla(262, 78%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 69% 75%, hsla(167, 81%, 65%, 1) 0px, transparent 50%),
+        radial-gradient(at 87% 65%, hsla(120, 82%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 89% 20%, hsla(160, 84%, 67%, 1) 0px, transparent 50%),
+        radial-gradient(at 61% 74%, hsla(214, 99%, 62%, 1) 0px, transparent 50%),
+        radial-gradient(at 84% 94%, hsla(1, 96%, 65%, 1) 0px, transparent 50%),
+        radial-gradient(at 46% 29%, hsla(312, 89%, 79%, 1) 0px, transparent 50%);
     overflow: hidden;
 }
 
@@ -57,12 +63,12 @@ nav ul li a {
     text-decoration: none;
     font-size: 15px;
     padding: 10px;
-    font-family: 'Robot', sans-serif;
+    font-family: 'Exo 2', sans-serif;
 }
 
 nav ul li a.start,
 nav ul li a.logout {
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 50px;
     width: max-content;
     /* background-color: #fff0cc; */
@@ -81,7 +87,6 @@ h2.title {
 }
 
 h3.intro {
-    font-family: 'Dosis', sans-serif;
     font-size: 23px;
     margin-top: -150px;
     padding: 10px 8%;
@@ -91,7 +96,8 @@ hr.hr1 {
     margin-top: -8px;
 }
 
-hr.hr1, hr.hr2 {
+hr.hr1,
+hr.hr2 {
     border: 1px solid black;
 }
 
@@ -121,12 +127,22 @@ p.p1:hover {
     transition: 1s ease;
 }
 
+/* .container {
+    max-height: 100vh;
+    overflow: auto;
+} */
+
+.container::-webkit-scrollbar {
+    width: 0px;
+}
+
 section.container div.recent {
+    width: 100%;
     display: flex;
     justify-content: center;
-    font-family: 'Dosis', sans-serif;
     margin-top: 50px;
-    font-size: 50px;
+    font-size: 30px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .section {
@@ -258,10 +274,61 @@ section div.img-one {
 }
 
 .section a.posts:hover {
-    color: white;
-    font-size: 20px;
+    color: darkblue;
     transition: .3s;
 }
+
+/* .recent-posts-aside {
+    border: solid 0px 2px 0px 0px;
+    width: 35%;
+    float: right;
+    margin-top: -644px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: 0;
+    right: 10;
+    overflow: auto;
+    padding-bottom: 127px;
+}
+
+
+.recent-posts-aside a {
+    display: block;
+}
+
+.tag-cloud, .social-media-links, .newsletter-subscription {
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: #555;
+}
+
+input {
+    padding: 8px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #242424;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+} */
+
 
 /* for phone */
 @media (max-width: 480px) {
@@ -275,7 +342,7 @@ section div.img-one {
 
     h2.title {
         font-size: 20px;
-	margin-top: -45px;
+        margin-top: -45px;
     }
 
     h3.intro {
@@ -298,7 +365,7 @@ section div.img-one {
     }
 
     .options {
-	margin-left: 8px;
+        margin-left: 8px;
     }
 }
 

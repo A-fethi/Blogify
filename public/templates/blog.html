@@ -56,6 +56,9 @@
                 <div class="Author"><b>{{ comment.user.username }}</b></div>
                 <div class="cmnt">{{ comment.text }}</div>
                 <div class="date">{{ comment.created_at }}</div>
+                {% if current_user.id == comment.author or current_user.id == comment.post.author %}
+                <div><a href="/delete-comment/{{comment.id}}" class="button"><strong>Delete</strong></a></div>
+                {% endif %}
             </div>
             <hr>
             {% endfor %}

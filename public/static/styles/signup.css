@@ -121,6 +121,7 @@ body {
 .container .user p {
     text-align: center;
 }
+
 .container .user a {
     text-decoration: none;
     color: black;
@@ -174,7 +175,7 @@ body {
         margin: 5px 0px -15px 0px;
         font-size: 25px;
     }
-    
+
     .container .user p {
         margin-top: -5px;
         font-size: 12px;

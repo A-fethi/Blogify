@@ -199,12 +199,13 @@ body {
         margin-top: 10px;
         font-size: 25px;
     }
-    
+
     .container .remember-forgot {
         display: inline-flex;
         font-size: 13px;
         margin: 0px 10px 10px 10px;
     }
+
     .container .box {
         position: relative;
         margin: 10px 0px 20px 0px;
@@ -240,12 +241,13 @@ body {
         margin-top: 10px;
         font-size: 25px;
     }
-    
+
     .container .remember-forgot {
         display: inline-flex;
         font-size: 13px;
         margin: 0px 10px 10px 10px;
     }
+
     .container .box {
         position: relative;
         /* margin: 10px 0px 20px 0px; */

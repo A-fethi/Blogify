@@ -33,7 +33,7 @@ def blog(id):
     if not post:
         flash("Post Does Not Exist", category='error')
         return redirect(url_for('views.home'))
-    return render_template("blog.html", user=current_user, post=post)
+    return render_template("blog.html", user=current_user, post=post, comment=comments)
     
 
 @posts.route("/delete/<id>")
@@ -60,6 +60,7 @@ def user_posts(username):
     user_posts = user.posts
     return render_template("posts.html", user=current_user, posts=user_posts, username=username)
 
+
 @posts.route("/create-comment/<post_id>", methods=['POST'])
 @login_required
 def comments(post_id):
@@ -74,4 +75,18 @@ def comments(post_id):
             comment = Comment(text=text, author=current_user.id, post_id=post_id)
             db.session.add(comment)
             db.session.commit()
+    return redirect(url_for('posts.blog', id=post_id))
+
+
+@posts.route("/delete-comment/<comment_id>")
+@login_required
+def delete_comment(comment_id):
+    comment = Comment.query.filter_by(id=comment_id).first()
+    if not comment:
+        flash("Comment Don\'t Exist", category='error')
+    else:
+        post_id = comment.post_id
+        db.session.delete(comment)
+        db.session.commit()
+        flash("Comment Deleted", category='success')
     return redirect(url_for('posts.blog', id=post_id))
