@@ -46,6 +46,14 @@
     font-family: 'poppins', sans-serif;
 }
 
+.Comments-container div.cmnt {
+    word-break: break-all;
+}
+
+/*.Comments-container div.date {
+    padding-left: 10px;
+}*/
+
 .Comments-container::-webkit-scrollbar {
     width: 10px;
 }
