@@ -11,7 +11,7 @@ body {
     background-attachment: fixed;
     background-size: cover; */
     font-family: 'Dosis', sans-serif;
-    background-color: #F0F8FF;
+    background-color: #e0e9f3;
 }
 
 body::-webkit-scrollbar {
@@ -77,8 +77,7 @@ nav ul li a.logout {
 }
 
 nav ul li a:hover {
-    background-image: linear-gradient(to bottom right, #bbcbdb, #f1e8ca);
-    border-radius: 50px;
+    color: white;
 }
 
 h2.title {
@@ -146,11 +145,16 @@ section.container div.recent {
 }
 
 .section {
-    width: 75%;
+    width: 97%;
     margin: 75px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     column-gap: 20px;
+}
+
+section h2 {
+    font-family: 'Dosis', sans-serif;
+    overflow: hidden;
 }
 
 .section h3 {
@@ -176,10 +180,7 @@ section div.card {
 section div.content {
     padding: 20px 10px;
     text-align: center;
-}
-
-section h2 {
-    font-family: 'Dosis', sans-serif;
+    margin: -25px 0px -25px 0px;
 }
 
 section p {

@@ -1,21 +1,6 @@
 .article {
     height: auto;
-}
-
-.published {
-    padding: 0 10px;
-    text-transform: capitalize;
-    font-style: italic;
-    color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
-
-.published span {
-    font-weight: 700;
-}
-
-.logo {
-    background-color: rgb(247, 241, 233);
+    margin-top: 30px;
 }
 
 .comments .comment-body {
@@ -23,9 +8,9 @@
     width: 70%;
     height: 40px;
     background-color: transparent;
-    border-style: double;
     padding: 10px;
     margin-left: 170px;
+    border-radius: 20px;
 }
 
 .comments .comment-btn {
@@ -34,33 +19,31 @@
     border-radius: 20px;
     margin-left: 8px;
     cursor: pointer;
+    border: solid black;
+    background-color: rgb(73, 73, 160);
+    color: white;
+}
+
+.comments .comment-btn:hover {
+    background-color: rgb(31, 31, 126);
 }
 
 .Comments-container {
     height: auto;
-    border: solid 1px;
+    border: solid 1px #C2DEDC;
     width: 90%;
     margin-left: 70px;
     max-height: 400px;
-    overflow-y: auto;
+    border-radius: 20px;
 }
 
 .Comments-container div {
     font-size: 12px;
-    font-family: 'Dosis', sans-serif;
     white-space: pre-line;
     display: flex;
     justify-content: space-between;
     padding: 10px;
-}
-
-.Comments-container div.Author,
-.Comments-container div.cmnt {
-    padding-right: 10px;
-}
-
-.Comments-container div.date {
-    margin-right: -310px;
+    font-family: 'poppins', sans-serif;
 }
 
 .Comments-container::-webkit-scrollbar {
@@ -82,8 +65,12 @@
 }
 
 .Comments-container div a {
-    color: blue;
+    color: #116A7B;
     text-decoration: none;
+}
+
+.Comments-container div a:hover {
+    color: #0f4049;
 }
 
 /* for phone */

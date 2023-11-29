@@ -33,6 +33,7 @@ def blog(id):
     if not post:
         flash("Post Does Not Exist", category='error')
         return redirect(url_for('views.home'))
+    comments = Comment.query.filter_by(post_id=id).all()
     return render_template("blog.html", user=current_user, post=post, comment=comments)
     
 
@@ -43,6 +44,7 @@ def delete_post(id):
     if not post:
         flash("Post Does Not Exist", category='error')
     else:
+        Comment.query.filter_by(post_id=id).delete()
         db.session.delete(post)
         db.session.commit()
         flash('Post Deleted!', category='success')
