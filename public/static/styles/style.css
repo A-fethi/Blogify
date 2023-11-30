@@ -235,13 +235,15 @@ section div.img-one {
 .Error_flash {
     color: #FFF;
     text-align: center;
+    font-weight: 600;
     padding: 15px;
     border-radius: 10px;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -635%);
+    transform: translate(-50%, -600%);
     z-index: 1000;
+    justify-content: center;
 }
 
 .Success_flash {
@@ -379,7 +381,7 @@ button {
 
     .Success_flash,
     .Error_flash {
-        transform: translate(-50%, -680%);
+        transform: translate(-50%, -600%);
         font-size: 15px;
     }
 }
