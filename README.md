@@ -59,6 +59,11 @@ To run Blogify locally, follow these steps:
 
 We welcome contributions to enhance Blogify. To contribute, please follow our [Contribution Guidelines](CONTRIBUTING.md).
 
+## Related Projects
+
+Explore other projects by our team:
+- [Blogify Landing-Page](https://a-fethi.github.io/Blog-ify/)
+
 ## Licensing
 
 This project is licensed under the [MIT License](LICENSE).
@@ -67,7 +72,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 Include screenshots of your app to give users a visual preview:
 
-- ![Screenshot 1](screenshots/screenshot1.png)
-- ![Screenshot 2](screenshots/screenshot2.png)
+- ![Homepage 1](screenshots/homepage.png)
+- ![Homepage 2](screenshots/recentblogs.png)
 
 Happy Blogging with Blogify! 🚀
