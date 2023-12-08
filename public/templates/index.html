@@ -2,20 +2,26 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets and favicon -->
     <link rel="stylesheet" href="../static/styles/style.css">
     <link rel="shortcut icon" href="../static/images/—Pngtree—letter b logo_6059128.png">
+    <!-- Preconnect and link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Kdam+Thmor+Pro&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <!-- Script for the webpage -->
     <script src="../static/scripts/script.js"></script>
+    <!-- Title of the webpage -->
     <title>Your Platform for Expressive Writing</title>
 </head>
 
 <body>
+    <!-- Header section with navigation links -->
     <header>
         <div>
             <div class="logo">
@@ -25,6 +31,7 @@
                     <ul>
                         <li><a href="/" class="home">Home</a></li>
                         <li><a href="/post" class="about">Write</a></li>
+			<!-- Conditional navigation based on user authentication -->
                         {% if user.is_authenticated %}
                         <li><a href="/logout" class="logout">Logout</a></li>
                         {% else %}
@@ -33,6 +40,7 @@
                         {% endif %}
                     </ul>
                 </nav>
+		<!-- Flash messages for errors and success -->
                 {% with messages = get_flashed_messages(with_categories=True) %}
                 {% if messages %}
                 {% for category, message in messages %}
@@ -56,6 +64,7 @@
     </header>
     <div class="mini-header">
         <h2 class="title">Embrace the art of curiosity.</h2>
+	<!-- Conditional display of avatar based on user authentication -->
         {% if not user.is_authenticated %}
         <img src="../static/images/peeps-avatar-alpha.png" alt="" width="250" class="sapiens">
         {% else %}
@@ -66,11 +75,13 @@
             it's celebrated.<br>Join us on a journey of discovery across a myriad of topics,<br>where every article is
             an
             invitation to expand your mind and ignite your imagination.</h3>
+	<!-- Conditional display of "Start Reading" link based on user authentication -->
         {% if not user.is_authenticated %}
         <p class="p1"><a href="/signup">Start Reading</a></p>
         {% endif %}
         <hr class="hr2">
     </div>
+    <!-- Main content section with recent blog posts -->
     <section class="container">
         <div class="recent">
             <h3>Recent Blogs</h3>

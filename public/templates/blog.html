@@ -2,23 +2,30 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set, compatibility, and viewport settings -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon for the website -->
     <link rel="shortcut icon" href="../static/images/—Pngtree—letter b logo_6059128.png">
+    <!-- Preconnect and link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Kdam+Thmor+Pro&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <!-- Title of the webpage, dynamic based on post title -->
     <title>Blog: {{ post.title }}</title>
+    <!-- Stylesheets for the webpage -->
     <link rel="stylesheet" href="../static/styles/style.css">
     <link rel="stylesheet" href="../static/styles/editor.css">
     <link rel="stylesheet" href="../static/styles/blog.css">
+    <!-- Script for the webpage -->
     <script src="../static/scripts/script.js"></script>
 </head>
 
 <body>
+    <!-- Header section with logo and navigation links -->
     <div class="logo">
         <nav>
             <a href="/"><img src="../static/images/—Pngtree—letter b logo_6059128.png" alt="logo" width="60px"></a>
@@ -27,6 +34,7 @@
                 <li><a href="/post" class="about">Editor</a></li>
             </ul>
         </nav>
+	<!-- Flash messages for errors and success -->
         {% with messages = get_flashed_messages(with_categories=True) %}
         {% if messages %}
         {% for category, message in messages %}
@@ -45,6 +53,7 @@
         {% endif %}
         {% endwith %}
     </div>
+    <!-- Main content section with post title and article -->
     <div class="test">
         <h1 class="title">{{ post.title }}</h1>
         <div class="article">
@@ -52,12 +61,14 @@
         </div>
     </div>
     <br><br>
+    <!-- Form for adding comments -->
     <form method='POST' action="/create-comment/{{ post.id }}">
         <div class="comments">
             <input type="text" id="kkk" name="text" class="comment-body">
             <label for="kkk"><button class="comment-btn">Comment</button></label>
         </div>
         <br>
+	<!-- Container for displaying comments -->
         <div class="Comments-container">
             {% for comment in post.comments|sort(attribute='created_at', reverse=True) %}
             <div>

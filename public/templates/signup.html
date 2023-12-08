@@ -2,21 +2,28 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets for signup page -->
     <link rel="stylesheet" href="../static/styles/signup.css">
+    <!-- Boxicons CSS for icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon and preconnected fonts -->
     <link rel="shortcut icon" href="../static/images/—Pngtree—letter b logo_6059128.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Kdam+Thmor+Pro&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <!-- Script for the webpage -->
     <script src="../static/scripts/script.js"></script>
+    <!-- Title of the webpage -->
     <title>Sign Up</title>
 </head>
 
 <body>
+    <!-- Header section with logo and navigation links -->
     <header>
         <div id="header">
             <div class="logo">
@@ -27,6 +34,7 @@
                         <li><a href="/" class="home">Home</a></li>
                     </ul>
                 </nav>
+		<!-- Flash messages for errors and success -->
                 {% with messages = get_flashed_messages(with_categories=True) %}
                 {% if messages %}
                 {% for category, message in messages %}
@@ -47,6 +55,7 @@
             </div>
         </div>
     </header>
+    <!-- Main content section with signup form -->
     <div class="container">
         <form method="POST">
             <h1>Sign Up</h1>
