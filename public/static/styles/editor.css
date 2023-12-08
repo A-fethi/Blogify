@@ -1,26 +1,3 @@
-/* .banner {
-    width: 100%;
-    height: 400px;
-    background-color: #bbcbdb;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.banner-upload-btn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #9ebd9e;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-} */
-
 textarea::-webkit-scrollbar {
     width: 10px;
 }
@@ -47,8 +24,6 @@ textarea::-webkit-scrollbar-thumb:hover {
 
 .title,
 .article {
-    /* display: flex;
-    justify-content: center; */
     width: 900px;
     min-height: 100px;
     height: auto;
@@ -100,14 +75,6 @@ textarea::-webkit-scrollbar-thumb:hover {
 }
 
 .options {
-    /*position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background: #fff;
-    display: flex;
-    justify-content: center;*/
     background-color: #E0E9F3;
     display: flex;
     justify-content: center;
@@ -117,7 +84,6 @@ textarea::-webkit-scrollbar-thumb:hover {
 .publish-btn {
     width: 150px;
     height: 30px;
-    /* margin-right: 20px; */
     margin-top: -30px;
     border-radius: 10px;
     color: white;
@@ -163,7 +129,6 @@ textarea::-webkit-scrollbar-thumb:hover {
     .publish-btn {
         width: 80px;
         height: 30px;
-        /* margin-right: 20px; */
         margin-top: -70px;
     }
 }
@@ -196,10 +161,6 @@ textarea::-webkit-scrollbar-thumb:hover {
     .publish-btn {
         width: 100px;
         height: 30px;
-        /* margin-right: 20px; */
         margin-top: -50px;
     }
 }
-
-/* for desktop */
-@media (min-width: 1025px) {}

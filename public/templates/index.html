@@ -78,7 +78,6 @@
         <div class="section">
             {% for post in posts %}
             <div class="card">
-                <!-- <div class="image-section img-one"></div> -->
                 <div class="content">
                     <h3>
                         From <a href="/posts/{{post.user.username}}" class="posts">{{ post.user.username }}</a><br> At
@@ -99,35 +98,6 @@
             {% endfor %}
         </div>
     </section>
-    <!-- <aside class="recent-posts-aside">
-        <h3>Explore More</h3>
-        <div class="tag-cloud">
-            <h4>Popular Tags</h4>
-            <ul>
-                <li><a href="#">Technology</a></li>
-                <li><a href="#">Travel</a></li>
-                <li><a href="#">Science</a></li>
-                <li><a href="#">Inspiration</a></li>
-                <li><a href="#">Food</a></li>
-            </ul>
-        </div>
-        <div class="social-media-links">
-            <h4>Connect with Us</h4>
-            <ul>
-                <li><a href="#" target="_blank">Facebook</a></li>
-                <li><a href="#" target="_blank">Twitter</a></li>
-                <li><a href="#" target="_blank">Instagram</a></li>
-                <li><a href="#" target="_blank">LinkedIn</a></li>
-            </ul>
-        </div>
-        <div class="newsletter-subscription">
-            <h4>Subscribe to Our Newsletter</h4>
-            <form action="#" method="post">
-                <input type="email" name="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </aside> -->
 </body>
 
 </html>

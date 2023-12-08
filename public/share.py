@@ -34,8 +34,9 @@ def blog(id):
         flash("Post Does Not Exist", category='error')
         return redirect(url_for('views.home'))
     comments = Comment.query.filter_by(post_id=id).all()
-    return render_template("blog.html", user=current_user, post=post, comment=comments)
-    
+    return render_template("blog.html", user=current_user,
+                           post=post, comment=comments)
+
 
 @posts.route("/delete/<id>")
 @login_required
@@ -60,7 +61,8 @@ def user_posts(username):
         flash("User Not Found!", category='error')
         return redirect(url_for('views.home'))
     user_posts = user.posts
-    return render_template("posts.html", user=current_user, posts=user_posts, username=username)
+    return render_template("posts.html", user=current_user,
+                           posts=user_posts, username=username)
 
 
 @posts.route("/create-comment/<post_id>", methods=['POST'])
@@ -74,7 +76,8 @@ def comments(post_id):
         if not post:
             flash('Post does not exist', category='error')
         else:
-            comment = Comment(text=text, author=current_user.id, post_id=post_id)
+            comment = Comment(text=text, author=current_user.id,
+                              post_id=post_id)
             db.session.add(comment)
             db.session.commit()
     return redirect(url_for('posts.blog', id=post_id))
