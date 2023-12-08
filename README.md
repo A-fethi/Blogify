@@ -70,7 +70,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Screenshots
 
-- ![Homepage 1](screenshots/homepage.png)
-- ![Homepage 2](screenshots/recentblogs.png)
+![Homepage 1](screenshots/homepage.png)
+![Homepage 2](screenshots/recentblogs.png)
 
-Happy Blogging with Blogify! 🚀
+<strong>Happy Blogging with Blogify!</strong> 🚀
