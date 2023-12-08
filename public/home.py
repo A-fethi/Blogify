@@ -8,5 +8,11 @@ views = Blueprint("views", __name__)
 @views.route("/")
 @views.route("/home")
 def home():
+    """
+    Renders the home page, displaying posts in descending order
+    of their creation date.
+
+    :return: Rendered template with user and posts data.
+    """
     posts = Post.query.order_by(Post.created_at.desc()).all()
     return render_template("index.html", user=current_user, posts=posts)

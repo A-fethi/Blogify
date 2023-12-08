@@ -10,6 +10,12 @@ auth = Blueprint("auth", __name__)
 
 @auth.route("/login", methods=["GET", "POST"])
 def login():
+    """
+    Handles user login. Validates credentials, logs in the user,
+    and redirects to the home page on success.
+
+    :return: Rendered template or redirect to home page.
+    """
     if request.method == 'POST':
         email = request.form.get("email")
         password = request.form.get("password")
@@ -28,6 +34,12 @@ def login():
 
 @auth.route("/signup", methods=["GET", "POST"])
 def sign_up():
+    """
+    Handles user registration. Validates input, creates a new user,
+    logs in the user, and redirects to the home page on success.
+
+    :return: Rendered template or redirect to home page.
+    """
     if request.method == 'POST':
         email = request.form.get("email")
         username = request.form.get("username")
@@ -61,5 +73,11 @@ def sign_up():
 @auth.route("/logout")
 @login_required
 def logout():
+    """
+    Logs out the currently logged-in user and redirects to
+    the home page.
+
+    :return: Redirect to home page.
+    """
     logout_user()
     return redirect(url_for("views.home"))

@@ -14,6 +14,11 @@ secret_key_hashed = hashlib.sha256(secret_key.encode()).hexdigest()
 
 
 def create_app():
+    """
+    Initializes and configures the Flask application.
+
+    :return: Initialized Flask app instance.
+    """
     app = Flask(__name__)
     app.config['SECRET_KEY'] = secret_key_hashed
     path = os.path.join(app.root_path, DB_NAME)
@@ -44,6 +49,11 @@ def create_app():
 
 
 def create_database(app):
+    """
+    Creates the database if it does not exist.
+
+    :param app: Flask app instance.
+    """
     with app.app_context():
         if not path.exists(app.config['SQLALCHEMY_DATABASE_URI']):
             db.create_all()
