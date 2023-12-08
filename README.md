@@ -70,8 +70,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Screenshots
 
-Include screenshots of your app to give users a visual preview:
-
 - ![Homepage 1](screenshots/homepage.png)
 - ![Homepage 2](screenshots/recentblogs.png)
 
